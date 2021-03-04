@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>SignUp</title>
+  </head>
+  <body>
+    <h1 id="heading">EXPENSE MANAGER</h1>
+    <div id="containe-div">
+      <div class="container_1">
+        <button class="btnsinup" id="btn1">Sign-Up</button>
+        <button class="btnlogin" id="btn2" disabled>Login</button>
+        <!-- <h1>LOGIN</h1> -->
+        <form id="loginForm">
+          <div>
+            <h3 class="label">Email</h3>
+            <input
+              class="input"
+              type="email"
+              name="email"
+              placeholder="Email"
+              required
+            /><br />
+          </div>
+          <div>
+            <h3 class="label">Password</h3>
+            <input
+              class="input"
+              type="password"
+              name="pass"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <input type="submit" class="submit" value="LOGIN" />
+        </form>
+        <p class="msg"></p>
+      </div>
+      <div class="container_2">
+        <button class="btnsinup" id="btn3" disabled>Sign-Up</button>
+        <button class="btnlogin" id="btn4">Login</button>
+        <!-- <h1>Resistration</h1> -->
+        <form id="registerForm">
+          <div>
+            <h3 class="label">Name</h3>
+            <input class="input" type="text" name="name" placeholder="Name" />
+            <p id="errorName"></p>
+          </div>
+          <div>
+            <h3 class="label">Email</h3>
+            <input class="input" type="text" name="email" placeholder="Email" />
+            <p id="errorEmail"></p>
+          </div>
+          <div>
+            <h3 class="label">Password</h3>
+            <input
+              class="input"
+              type="password"
+              name="pass"
+              placeholder="Password"
+            />
+            <p id="errorPass"></p>
+          </div>
+          <input type="submit" class="submit" value="Sign Up" />
+        </form>
+        <p class="msg1"></p>
+      </div>
+    </div>
+
+    <script src="signup_login.js"></script>
+  </body>
+</html>

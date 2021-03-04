@@ -1,0 +1,112 @@
+#header{
+    width: 100%;
+    background-color: grey;
+
+}
+#user {
+    width: 20%;
+    height: 30px;
+    margin: 5px;
+    background-color: white;
+    float: left;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+#logout{
+    float: right;
+    width: 15%;
+    height:37px;
+    font-size: 25px;
+    
+}
+#result {
+    margin: auto;
+    width: 60%;
+    
+    
+    background-color: rgb(160, 160, 160);
+    padding: 10px;
+}
+
+#res {
+    width: 70%;
+    height: 200px;
+    
+    margin: auto;
+}
+#bottom {
+    width: 70%;
+    margin: auto;
+}
+#res > div {
+    width: 28%;
+    height: 80%;
+    float: left;
+    margin: 20px 20px;
+    text-align: center;
+    
+    
+    font-size: 25px;
+    color: white;
+}
+#transactions{
+    width:  55%;
+    height: 350px;
+    margin-top: 25px;
+    font-size: 20px;
+    color: white;
+    
+    background-color:grey;
+    float: left;
+    overflow-y:scroll;
+}
+#transactions  div {
+    font-size: 25px;
+    text-align: center;
+}
+#input{
+    
+    width: 90%;
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 10px ;
+  
+    background-color: rgb(160, 160, 160);
+    padding: 10px;
+   
+}
+.main {
+    width: 40%;
+   margin: 15px;
+    float: left;
+    
+
+}
+
+.input{
+    border: 1px solid teal;
+   
+    height: 30px;
+    width: 90%;
+    outline: none;
+    
+    
+}
+ .input:hover{
+    box-shadow: 1px 1px 3px 3px #7cdb70;
+}
+#submit
+{
+    border: none;
+    border-radius: 5px;
+    font-size: 30px;
+    width:60%;
+    height: 40px;
+    background-color: #117504;
+    outline: none;
+    color: white;
+    margin: 15px;
+}
+#submit:hover{
+    box-shadow: 1px 1px 3px 3px #454645; 
+}

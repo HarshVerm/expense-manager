@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="shortcut icon"
+      href="https://icon-library.com/images/recharge-icon/recharge-icon-4.jpg"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" type="text/css" href="dashbord.css"> -->
+    <title>Dashbord</title>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+        font-family: "Roboto Condensed", sans-serif;
+      }
+      #header {
+        width: 100%;
+        background-color: #34ace0;
+      }
+      #form {
+        background-color: #34ace0;
+        font-family: "Roboto Condensed", sans-serif;
+        text-align: center;
+        padding: 20px;
+      }
+      #user {
+        width: 20%;
+        height: 25px;
+        margin: 5px;
+        float: left;
+        background-color: white;
+        color: #34ace0;
+        border-radius: 20px;
+        padding-left: 10px;
+        text-align: center;
+        font-size: large;
+      }
+      #logout {
+        float: right;
+        width: 15%;
+        margin: 3px;
+        height: 30px;
+        color: white;
+        background-color: #227093;
+        border: 0px;
+      }
+      #logout:hover {
+        background-color: #34ace0;
+        border: 1px solid white;
+      }
+      #result {
+        margin: auto;
+        width: 60%;
+        background-color: rgb(160, 160, 160);
+        padding: 10px;
+      }
+      ​ #res {
+        width: 70%;
+        height: 200px;
+        margin: auto;
+      }
+
+      #bottom {
+        width: 70%;
+        margin: auto;
+      }
+      #res > div {
+        width: 28%;
+        height: 80%;
+        float: left;
+        margin: 20px 20px;
+        text-align: center;
+        font-size: 25px;
+        color: white;
+      }
+      #res > div:hover {
+        box-shadow: 5px 10px #485460;
+      }
+      #last-transaction {
+        width: 55%;
+        height: 350px;
+        margin-top: 35px;
+        font-size: 20px;
+        color: white;
+        background-color: #1e90ff;
+        float: left;
+        overflow-y: scroll;
+      }
+      #last-transaction div {
+        font-size: 25px;
+        padding-left: 20px;
+      }
+      #input {
+        width: 90%;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        margin-top: 10px;
+        padding: 10px;
+      }
+      .main {
+        width: 40%;
+        margin: 15px;
+        float: left;
+      }
+      ​ .input {
+        border: none;
+        height: 30px;
+        width: 90%;
+        outline: none;
+      }
+      .input:hover {
+        border-bottom: 3px solid #227093;
+      }
+      #submit {
+        border: none;
+        border-radius: 50px;
+        font-size: 20px;
+        width: 60%;
+        height: 40px;
+        background-color: #227093;
+        outline: none;
+        color: white;
+        margin: 15px;
+      }
+      #submit:hover {
+        border: 1px solid white;
+        background-color: #1e90ff;
+      }
+      #ledger {
+        border: none;
+        border-radius: 50px;
+        font-size: 20px;
+        width: 10%;
+        height: 40px;
+        background-color: #227093;
+        outline: none;
+        color: white;
+        margin: 15px;
+      }
+      ​ #ledger:hover {
+        border: 1px solid white;
+        background-color: #1e90ff;
+      }
+      .value {
+        padding: 30px;
+      }
+      #trans-title {
+        background-color: #1e90ff;
+        height: 50px;
+        float: left;
+        width: 500px;
+        color: white;
+        text-align: center;
+        font-size: 30px;
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <button id="logout">LOGOUT</button>
+      <div id="user">USER NAME</div>
+      <div><h1 style="text-align: center">Dash Board</h1></div>
+    </header>
+    ​
+
+    <div id="res">
+      <div style="background-color: #34ace0; border-radius: 10px">
+        Total income <br />
+        <div id="income" class="value">0</div>
+      </div>
+      <div style="background-color: #34ace0; border-radius: 10px">
+        Total Expences <br />
+        <div id="expences" class="value">0</div>
+      </div>
+      <div style="background-color: #34ace0; border-radius: 10px">
+        Balance <br />
+        <div id="balance" class="value">0</div>
+      </div>
+    </div>
+    ​ ​
+    <div id="bottom">
+      ​
+      <div class="main">
+        <div id="input">
+          <form id="form">
+            <div>
+              <label for="Title" class="lable"><h3>TITLE</h3></label>
+              <input
+                type="text"
+                class="input"
+                name="title"
+                placeholder="Title"
+                pattern="[A-Za-z\d\.]{3,40}"
+                title="minimum 3  charecters and no space"
+                required
+              />
+            </div>
+            <br />
+            <div>
+              <label for="Type" class="lable">TYPE</label> <br />
+              <input
+                type="radio"
+                name="type"
+                id="credit"
+                value="credit"
+                required
+              />Credit <br />
+              <input
+                type="radio"
+                name="type"
+                id="debit"
+                value="debit"
+                required
+              />Debit
+            </div>
+            <br />
+            <div>
+              <label for="Amount" class="lable">AMOUNT</label>
+              <input
+                type="number"
+                class="input"
+                name="amount"
+                placeholder="Amount"
+                required
+              />
+            </div>
+            <br />
+            <input type="submit" id="submit" value="Submit" />
+          </form>
+        </div>
+        ​
+      </div>
+      <div id="trans-title">Transactions</div>
+      <div id="transactions">
+        <div id="last-transaction"></div>
+      </div>
+      <button id="ledger">Ledger</button>
+    </div>
+    ​ ​
+
+    <script src="dashboard.js"></script>
+  </body>
+</html>
